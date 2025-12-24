@@ -1,7 +1,7 @@
 module.exports = {
   apps: [
     {
-      name: 'sentosh',
+      name: 'smm',
       script: 'npm',
       args: 'start',
       cwd: process.cwd(),
