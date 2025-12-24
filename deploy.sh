@@ -57,7 +57,8 @@ fi
 
 echo -e "${YELLOW}Step 6: Installing dependencies...${NC}"
 cd $APP_DIR
-npm install --production
+# Install all dependencies (including devDependencies) needed for build
+npm install
 
 echo -e "${YELLOW}Step 7: Building the application...${NC}"
 npm run build

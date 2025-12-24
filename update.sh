@@ -5,8 +5,8 @@
 
 set -e
 
-APP_DIR="/var/www/sentosh"
-PM2_APP_NAME="sentosh"
+APP_DIR="/var/www/smm"
+PM2_APP_NAME="smm"
 
 echo "🔄 Updating Sentosh..."
 
@@ -16,7 +16,7 @@ echo "📥 Pulling latest changes from GitHub..."
 git pull origin main
 
 echo "📦 Installing dependencies..."
-npm install --production
+npm install
 
 echo "🏗️  Building application..."
 npm run build
