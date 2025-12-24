@@ -1,36 +1,117 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Sentosh - Social Media Management Platform
+
+A modern, all-in-one social media management platform built with Next.js, React, and TypeScript.
+
+## Features
+
+- 📅 Smart Scheduling - Schedule posts across all platforms
+- 📊 Analytics Dashboard - Track performance with detailed insights
+- 🤖 AI-Powered Content - Generate engaging captions and hashtags
+- 👥 Team Collaboration - Work together seamlessly
+- 💬 Unified Inbox - Manage all comments from one place
+- 🔄 Cross-Platform - Post to Instagram, Twitter, LinkedIn, Facebook, TikTok, and more
+
+## Tech Stack
+
+- **Framework**: Next.js 16
+- **UI**: React 19, TypeScript
+- **Styling**: Tailwind CSS v4
+- **Components**: shadcn/ui
+- **Icons**: Lucide React
 
 ## Getting Started
 
-First, run the development server:
+### Development
 
 ```bash
+# Install dependencies
+npm install
+
+# Run development server
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+
+# Open http://localhost:3000
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+### Production Build
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+```bash
+npm run build
+npm start
+```
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+## Deployment
 
-## Learn More
+### Quick Deploy to VPS
 
-To learn more about Next.js, take a look at the following resources:
+See [QUICK_START.md](./QUICK_START.md) for a 5-minute deployment guide.
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+### Full Deployment Guide
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+See [DEPLOYMENT.md](./DEPLOYMENT.md) for detailed deployment instructions.
 
-## Deploy on Vercel
+### Files Included
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+- `deploy.sh` - Automated deployment script
+- `update.sh` - Quick update script after code changes
+- `ecosystem.config.js` - PM2 configuration
+- `nginx.conf` - Nginx reverse proxy configuration
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+## Project Structure
+
+```
+sentosh/
+├── app/                  # Next.js app directory
+│   ├── layout.tsx       # Root layout
+│   ├── page.tsx         # Home page
+│   ├── privacy/         # Privacy policy page
+│   └── terms/           # Terms of service page
+├── components/          # React components
+│   ├── ui/              # shadcn/ui components
+│   ├── navbar.tsx       # Navigation bar
+│   ├── hero.tsx         # Hero section
+│   ├── features.tsx     # Features section
+│   ├── testimonials.tsx  # Testimonials section
+│   ├── pricing.tsx      # Pricing section
+│   ├── cta.tsx          # Call-to-action section
+│   └── footer.tsx       # Footer component
+├── lib/                 # Utility functions
+└── public/              # Static assets
+```
+
+## Scripts
+
+- `npm run dev` - Start development server
+- `npm run build` - Build for production
+- `npm start` - Start production server
+- `npm run lint` - Run ESLint
+
+## Environment Variables
+
+Create a `.env.local` file for local development:
+
+```env
+NODE_ENV=development
+```
+
+For production, set environment variables in `ecosystem.config.js` or use a `.env` file.
+
+## Contributing
+
+1. Fork the repository
+2. Create your feature branch (`git checkout -b feature/amazing-feature`)
+3. Commit your changes (`git commit -m 'Add some amazing feature'`)
+4. Push to the branch (`git push origin feature/amazing-feature`)
+5. Open a Pull Request
+
+## License
+
+This project is private and proprietary.
+
+## Support
+
+For support, email support@sentosh.com or open an issue in the repository.
+
+---
+
+Built with ❤️ by the Sentosh team
