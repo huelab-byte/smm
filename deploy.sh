@@ -15,10 +15,10 @@ NC='\033[0m' # No Color
 
 # Configuration
 APP_NAME="sentosh"
-APP_DIR="/var/www/sentosh"
-REPO_URL=""
+APP_DIR="/var/www/smm"
+REPO_URL="https://github.com/huelab-byte/smm.git"
 NODE_VERSION="20"
-PM2_APP_NAME="sentosh"
+PM2_APP_NAME="smm"
 
 # Check if running as root
 if [ "$EUID" -ne 0 ]; then 
